@@ -20,6 +20,7 @@
     --fs-h1: 3rem;
     --fs-h2: 2.25rem;
     --fs-h3: 1.25rem;
+    --fs-h4: 2rem;
     --fs-body: 1rem;
 
     --bs: 0.55em 0.55em 1em rgba(0,0,0,.25),
@@ -85,7 +86,8 @@ strong {font-weight: var(--fw-bold) }
 
 h1,
 h2,
-h3 {
+h3,
+h4 {
     line-height: 1;
     margin: 0;
 }
@@ -93,6 +95,7 @@ h3 {
 h1 { font-size: var(--fs-h1) }
 h2 { font-size: var(--fs-h2) }
 h3 { font-size: var(--fs-h3) }
+h4 { font-size: var(--fs-h4) }
 
 
 .section__title {
@@ -130,14 +133,16 @@ h3 { font-size: var(--fs-h3) }
 /* header */
 
 header {
-    display: block;
-    justify-content: none;
+    display: flex;
     padding: 1em;
+    justify-content: space-between;
 }
 
 .logo {
     max-width: 100px;
 }
+
+/* Nav */
 
 .nav {
     position: fixed;
@@ -166,8 +171,15 @@ header {
 
 .desktop_nav__list li {
     list-style-type: none;
-    display: inline;
+    display: inline-block;
     margin: .5em;
+}
+
+.desktop_nav__link {
+    color: inherit;
+    font-weight: var(--fw-bold);
+    font-size: var(--fs-h4);
+    text-decoration: none;
 }
 
 .nav__link {
@@ -239,9 +251,9 @@ header {
 .hamburger::before { top: 6px; }
 .hamburger::after { bottom: 6px; }
 
-/* Phone Nav */
+/* Phone Nav for lower px*/
 
-@media screen and (min-width:1044px){
+@media screen and (min-width:750px){
     .hamburger{
     display:none;
     }
@@ -250,9 +262,9 @@ header {
     }
     }
 
-/* Desktop Nav */
+/* Desktop Nav for higher px*/
 
-    @media screen and (max-width:1045px){
+    @media screen and (max-width:751px){
     .hamburger{
     display:block;
     }
