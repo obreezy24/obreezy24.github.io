@@ -274,7 +274,7 @@ header {
     .intro {
         display: grid;
         width: min-content;
-        margin: 0 auto;
+        margin: 2em;
         grid-column-gap: 1em;
         grid-template-areas: 
             "img title"
@@ -386,7 +386,6 @@ header {
         position: relative;
         z-index: 2;
     }
-
 }
 
 /* My Work */
