@@ -13,6 +13,7 @@
     --fw-reg: 300;
     --fw-bold: 900;
     
+    --clr-background: #808080;
     --clr-light: #aab8c2;
     --clr-dark: #303030;
     --clr-accent: #ffda68;
@@ -43,12 +44,24 @@ html {
   }
 
 body {
-    background: var(--clr-light);
+    background: var(--clr-background);
     color: var(--clr-dark);
     margin: 0;
     font-family: var(--ff-primary);
     font-size: var(--fs-body);
     line-height: 1.6;
+}
+
+body::-webkit-scrollbar {
+    width: 0.75rem;
+}
+
+body::-webkit-scrollbar-track {
+    background: gray;
+}
+
+body::-webkit-scrollbar-thumb {
+    background: #565656;
 }
 
 section {
@@ -402,7 +415,7 @@ header {
 
 /* My Work */
 
-.my-work{
+.my-work {
     background-color: var(--clr-dark);
     color: var(--clr-light);
     text-align: center;
