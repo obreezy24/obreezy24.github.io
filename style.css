@@ -518,6 +518,8 @@ header {
     text-decoration: underline;
 }
 
+/* Social Items and Icons */
+
 .social-list {
     list-style: none;
     display: flex;
