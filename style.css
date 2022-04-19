@@ -429,11 +429,13 @@ header {
 }
 
 .portfolio__item {
-    background: var(--clr-accent);
+    background: var(--clr-dark);
     overflow: hidden;
 }
 
 .portfolio__img {
+    width: 500px;
+    height: 300px;
     transition: 
         transform 750ms cubic-bezier(.5, 0, .5, 1);
         opacity: 250ms linear; 
